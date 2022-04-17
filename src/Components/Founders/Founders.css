@@ -1,0 +1,48 @@
+.founders-container > .title-text {
+  font-size: 35px;
+}
+.founders-container > .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.founders-container > .row .col img {
+  animation-name: founders;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes founders {
+  0% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
+.founders-container > .row .col h2 {
+  margin: 20px 0;
+  font-size: 30px;
+}
+.founders-container > .row .col p {
+  font-family: "Comfortaa", cursive;
+  font-size: 17px;
+  line-height: 25px;
+}
+@media screen and (max-width: 1080px) {
+  .founders-container > .row {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .founders-container > .row {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+}
