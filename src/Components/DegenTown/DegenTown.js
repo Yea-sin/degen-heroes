@@ -3,7 +3,7 @@ import "./DegenTown.css";
 
 const DegenTown = () => {
   return (
-    <section className="container">
+    <section className="container degenTown-container">
       <div className="row">
         <div className="col">
           <h2 className="col-title">TRAVEL TO DEGEN TOWN</h2>
