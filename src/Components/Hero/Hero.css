@@ -1,0 +1,66 @@
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .hero-container .hero-img {
+  display: flex;
+  justify-content: center;
+} */
+.hero-container .hero-img img {
+  max-width: 650px;
+}
+.hero-container .hero-text {
+  font-family: "Fredoka One", cursive;
+}
+.hero-container .hero-counter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  margin: 30px 0;
+}
+.hero-container .hero-counter .col {
+  font-family: "Fredoka One", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 30px;
+  /* font-size: 70px; */
+}
+.hero-container .hero-counter .col h2 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  font-size: clamp(30px, 7vw, 80px);
+}
+.hero-container .hero-counter .col P {
+  font-weight: 700;
+}
+
+.hero-container .hero-counter .days,
+.secs {
+  border: 5px solid #ffff;
+  background-color: #ddf3ad;
+}
+.hero-container .hero-counter .hours {
+  background-color: #ffff;
+}
+.hero-container .hero-counter .mins {
+  border: 5px solid #ddf3ad;
+}
+.hero-container .hero-counter .days h2,
+.hours h2 {
+  -webkit-text-fill-color: #90defd;
+}
+.hero-container .hero-counter .mins h2,
+.secs h2 {
+  -webkit-text-fill-color: #ddf3ad;
+}
+.hero-container .btn {
+  font-size: 30px;
+}
+.hero-container .btn .btn-style {
+  padding: 10px 55px;
+}

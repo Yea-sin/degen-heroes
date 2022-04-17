@@ -1,0 +1,22 @@
+[
+  {
+    "title": "home",
+    "class": "nav-links",
+    "url": "/"
+  },
+  {
+    "title": "blog",
+    "class": "nav-links",
+    "url": "/"
+  },
+  {
+    "title": "contact us",
+    "class": "nav-links",
+    "url": "/"
+  },
+  {
+    "title": "about",
+    "class": "nav-links",
+    "url": "/"
+  }
+]

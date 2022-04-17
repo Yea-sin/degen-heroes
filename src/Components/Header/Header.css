@@ -1,0 +1,76 @@
+/* header area */
+.header-container {
+  position: fixed;
+  width: 100%;
+}
+.header-items {
+  background: transparent;
+  padding: 1.2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.2s linear;
+}
+.header-items.active {
+  background-color: #6addfa;
+  transition: all 0.2s linear;
+}
+
+/* nav menu */
+.header-items .menu-open {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.header-items .menu-close {
+  margin: 0 98%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.header-items .nav-menu {
+  position: absolute;
+  padding-top: 8%;
+  top: 70px;
+  z-index: 1;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6addfa;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.2s linear;
+  font-family: "Comfortaa", cursive;
+}
+.header-items .nav-menu.active {
+  left: 0;
+}
+
+.header-items .nav-menu a {
+  padding-bottom: 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Connect wallet button */
+.header-items .btn {
+  font-size: 20px;
+}
+.header-items .btn .btn-style {
+  padding: 8px 50px;
+}
+.header-items .wallet-btn-none {
+  display: none;
+}
+.header-items .wallet-btn-active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-items .visibility {
+    display: none;
+  }
+}
