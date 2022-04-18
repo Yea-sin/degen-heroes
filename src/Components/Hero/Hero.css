@@ -5,12 +5,13 @@
   flex-direction: column;
   align-items: center;
 }
-/* .hero-container .hero-img {
-  display: flex;
-  justify-content: center;
-} */
+.hero-container .hero-img {
+  z-index: -1;
+}
 .hero-container .hero-img img {
-  max-width: 650px;
+  width: 50%;
+  transform: translate(50%);
+  z-index: 0;
 }
 .hero-container .hero-text {
   font-family: "Fredoka One", cursive;

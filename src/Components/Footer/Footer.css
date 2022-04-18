@@ -1,0 +1,9 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container > p {
+  margin-top: 20px;
+}

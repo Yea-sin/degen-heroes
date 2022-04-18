@@ -14,6 +14,12 @@
   position: relative;
   z-index: 1;
 }
+.degenTown-container > .row .col {
+  z-index: -1;
+}
+.degenTown-container > .row .col > .col-title {
+  z-index: 0;
+}
 .degenTown-container > .row .col > .col-title::after {
   position: absolute;
   content: "";

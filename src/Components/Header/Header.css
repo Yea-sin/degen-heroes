@@ -29,11 +29,14 @@
   transition: all 0.2s linear;
 }
 
+body {
+  position: relative;
+  z-index: -1;
+}
 .header-items .nav-menu {
   position: absolute;
   padding-top: 8%;
   top: 70px;
-  z-index: 1;
   left: -100%;
   display: flex;
   flex-direction: column;
@@ -43,6 +46,7 @@
   height: 100vh;
   transition: all 0.2s linear;
   font-family: "Comfortaa", cursive;
+  z-index: 0;
 }
 .header-items .nav-menu.active {
   left: 0;
@@ -53,13 +57,14 @@
   color: black;
   font-size: 18px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 /* Connect wallet button */
-.header-items .btn {
+.header-items .common-btn {
   font-size: 20px;
 }
-.header-items .btn .btn-style {
+.header-items .common-btn .btn-style {
   padding: 8px 50px;
 }
 .header-items .wallet-btn-none {

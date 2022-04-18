@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Social from "../Social/Social";
 import "./Header.css";
 
 const Header = () => {
@@ -19,15 +20,15 @@ const Header = () => {
               width="35"
               height="35"
               fill="currentColor"
-              class="bi bi-x-lg"
+              className="bi bi-x-lg"
               viewBox="0 0 16 16"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
               />
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
               />
             </svg>
@@ -37,11 +38,11 @@ const Header = () => {
               width="35"
               height="35"
               fill="currentColor"
-              class="bi bi-list"
+              className="bi bi-list"
               viewBox="0 0 16 16"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
               />
             </svg>
@@ -53,13 +54,16 @@ const Header = () => {
           <a href="/">roadmaps</a>
           <a href="/">founders</a>
           <a href="/">faqs</a>
-          <button className="btn wallet-btn-active">
+          <button className="common-btn wallet-btn-active">
             <div className="btn-style wallet-style">connect wallet</div>
           </button>
+          <Social />
         </div>
         <button
           className={
-            isOpen ? "btn wallet-btn-none" : "visibility btn wallet-btn-active"
+            isOpen
+              ? "common-btn wallet-btn-none"
+              : "visibility common-btn wallet-btn-active"
           }
         >
           <div className="btn-style">connect wallet</div>

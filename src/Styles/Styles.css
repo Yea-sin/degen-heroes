@@ -18,11 +18,10 @@ body {
   background: linear-gradient(0deg, #a3fbba 0, #90defd 100%);
 }
 .container {
-  padding: 50px 70px;
-  text-align: center;
+  padding: 50px 0;
 }
 /* button */
-.btn {
+.common-btn {
   border: 2px solid #fff;
   border-radius: 10px;
   box-sizing: border-box;
@@ -32,12 +31,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-.btn .btn-style {
+.common-btn .btn-style {
   background: #ccfcd7;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
-.btn .btn-style:hover {
+.common-btn .btn-style:hover {
   cursor: pointer;
   transform: translate(-10px, -10px);
 }

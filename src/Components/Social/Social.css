@@ -1,0 +1,26 @@
+.social-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.social-container a {
+  position: relative;
+  z-index: -1;
+  background-color: #ffff;
+  border-radius: 50%;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  transition: all 0.45s ease;
+}
+.social-container a svg {
+  position: absolute;
+  z-index: 0;
+  padding: 5px;
+  margin-left: 20px;
+  transform: translate(-37%, 13%);
+}
+.social-container a:hover {
+  transform: translateY(-5px);
+}
