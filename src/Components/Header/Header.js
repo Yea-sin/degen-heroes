@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Social from "../Social/Social";
 import "./Header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+  const fixedNavbar = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    fixedNavbar();
+    window.addEventListener("scroll", fixedNavbar);
+  });
+
   return (
-    <div className="header-container">
+    <div
+      className={navbar ? "header-container navbar-active" : "header-container"}
+    >
       <div className={isOpen ? "header-items active" : "header-items"}>
         <div
           onClick={() => handleToggle()}

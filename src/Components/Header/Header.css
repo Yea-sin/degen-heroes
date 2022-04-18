@@ -19,6 +19,9 @@
 }
 
 /* nav menu */
+.navbar-active {
+  background-color: #ffff;
+}
 .header-items .menu-open {
   cursor: pointer;
   transition: all 0.2s linear;

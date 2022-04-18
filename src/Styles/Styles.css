@@ -18,7 +18,7 @@ body {
   background: linear-gradient(0deg, #a3fbba 0, #90defd 100%);
 }
 .container {
-  padding: 50px 0;
+  padding: 50px 30px;
 }
 /* button */
 .common-btn {

@@ -27,7 +27,7 @@ const Hero = () => {
             <p>SECS</p>
           </div>
         </div>
-        <button className="btn">
+        <button className="common-btn">
           <div className="btn-style">Opensa</div>
         </button>
       </div>

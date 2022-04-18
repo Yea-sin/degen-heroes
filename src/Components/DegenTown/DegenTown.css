@@ -5,7 +5,7 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  grid-column-gap: 100px;
 }
 .degenTown-container > .row .col .col-title {
   max-width: 300px;
